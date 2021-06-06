@@ -16,6 +16,9 @@ public class TeleOp extends OpMode {
 
     @Override
     public void loop() {
-        
+        frontRight.setPower(gamepad1.left_stick_y);
+        backRight.setPower(gamepad1.left_stick_y);
+        frontLeft.setPower(-gamepad1.left_stick_y);
+        backLeft.setPower(-gamepad1.left_stick_y);
     }
 }
